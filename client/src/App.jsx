@@ -1,9 +1,21 @@
+import { BrowserRouter } from "react-router-dom"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+import AppRoutes from "./routes/AppRoutes"
+
 function App() {
 
   return (
-    <>
-      <h1 className="text-blue-500 text-xl text-center font-bold">MXC SHOP</h1>
-    </>
+    <BrowserRouter>
+      {/* Header */}
+      <Header />
+
+      {/* Routes */}
+      <AppRoutes />
+      
+      {/* Footer */}
+      <Footer />
+    </BrowserRouter>
   )
 }
 
